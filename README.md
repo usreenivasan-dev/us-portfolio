@@ -21,3 +21,4 @@ Edit `app/page.tsx` to update:
 - GitHub
 
 Replace the placeholder contact links before publishing.
+Portfolio deployment updated.
