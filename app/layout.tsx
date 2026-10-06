@@ -1,8 +1,17 @@
+import { Metadata } from "next";
 import "./globals.css";
 
-export const metadata = {
-  title: "Ullas Sreenivasan | Senior Front-End / UI Developer",
-  description: "Professional portfolio of Ullas Sreenivasan, Senior Front-End / UI Developer."
+export const metadata: Metadata = {
+  title: "Ullas Sreenivasan | UI-Focused Full Stack Developer",
+  description:
+    "Portfolio of Ullas Sreenivasan — UI-focused Full Stack Developer and Technical Lead.",
+  icons: {
+    icon: [
+      { url: "/favicon.ico" },
+      { url: "/icons/favicon.svg", type: "image/svg+xml" },
+    ],
+    apple: "/icons/apple-touch-icon.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {

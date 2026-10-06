@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const skills = [
   "Angular", "React", "Next.js", "TypeScript", "JavaScript", "HTML5", "CSS3 / SASS",
   "RxJS", "NgRx / Redux", "Node.js", "REST APIs", "Java / Spring Boot", "MySQL",
@@ -48,7 +50,7 @@ export default function Home() {
             <div>
               <div className="mb-6 flex items-center gap-3 text-sm font-semibold text-blue-400">
                 <span className="h-px w-10 bg-blue-500" />
-                SENIOR FRONT-END / UI DEVELOPER
+                UI-Focused Full Stack Developer | Technical Lead
               </div>
               <h1 className="max-w-4xl text-5xl font-black leading-[1.02] tracking-[-0.04em] md:text-7xl">
                 Building digital
@@ -76,7 +78,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="profile-card rounded-2xl border border-white/10 bg-white/[.035] p-7">
+            {/* <div className="profile-card rounded-2xl border border-white/10 bg-white/[.035] p-7">
               <div className="mb-8 text-xs font-bold tracking-[.2em] text-blue-400">PROFILE</div>
               <div className="space-y-7">
                 <div>
@@ -93,6 +95,18 @@ export default function Home() {
                   <div className="text-xl font-bold">Enterprise Focus</div>
                   <div className="mt-1 text-sm text-slate-500">Scalable, maintainable applications</div>
                 </div>
+              </div>
+            </div> */}
+            <div className="relative">
+              <div className="overflow-hidden rounded-2xl border border-white/10 bg-white/[.035]">
+                <Image
+                  src="/profile-hero.png"
+                  alt="Ullas Sreenivasan"
+                  width={700}
+                  height={850}
+                  priority
+                  className="h-auto w-full object-cover"
+                />
               </div>
             </div>
           </div>
@@ -154,7 +168,7 @@ export default function Home() {
             <h2 className="section-title">A decade of building for the web.</h2>
             <div className="mt-9 border-l border-blue-500/40 pl-7">
               <div className="text-sm font-bold text-blue-400">10+ YEARS</div>
-              <h3 className="mt-3 text-2xl font-bold">Front-End / UI Development</h3>
+              <h3 className="mt-3 text-2xl font-bold">UI-Focused Full Stack Development</h3>
               <p className="mt-4 max-w-3xl leading-8 text-slate-400">
                 Enterprise application development, UI architecture, component development,
                 API integration, responsive design, debugging, code quality and Agile delivery.
@@ -174,9 +188,9 @@ export default function Home() {
                 Open to senior front-end, UI and full-stack opportunities.
               </p>
               <div className="mt-8 flex flex-wrap gap-3">
-                <a href="mailto:your.email@example.com" className="rounded-lg bg-blue-600 px-6 py-3 font-bold text-white hover:bg-blue-500">Email Me</a>
-                <a href="https://www.linkedin.com/" target="_blank" className="rounded-lg border border-white/15 px-6 py-3 font-bold text-slate-200 hover:bg-white/5">LinkedIn</a>
-                <a href="https://github.com/" target="_blank" className="rounded-lg border border-white/15 px-6 py-3 font-bold text-slate-200 hover:bg-white/5">GitHub</a>
+                <a href="mailto:usreenivasan.dev@gmail.com" className="rounded-lg bg-blue-600 px-6 py-3 font-bold text-white hover:bg-blue-500">Email Me</a>
+                <a href="https://www.linkedin.com/in/ullas-sreenivasan" target="_blank" className="rounded-lg border border-white/15 px-6 py-3 font-bold text-slate-200 hover:bg-white/5">LinkedIn</a>
+                <a href="https://github.com/usreenivasan-dev" target="_blank" className="rounded-lg border border-white/15 px-6 py-3 font-bold text-slate-200 hover:bg-white/5">GitHub</a>
               </div>
             </div>
           </div>
@@ -184,7 +198,7 @@ export default function Home() {
       </main>
 
       <footer className="border-t border-white/10 bg-[#080b10] py-8 text-center text-sm text-slate-600">
-        © 2026 Ullas Sreenivasan · Senior Front-End / UI Developer
+        © 2026 Ullas Sreenivasan · Full Stack Developer
       </footer>
     </div>
   );

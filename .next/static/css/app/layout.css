@@ -259,6 +259,9 @@
   .hidden {
     display: none;
   }
+  .h-auto {
+    height: auto;
+  }
   .h-px {
     height: 1px;
   }
@@ -267,6 +270,9 @@
   }
   .w-10 {
     width: calc(var(--spacing) * 10);
+  }
+  .w-full {
+    width: 100%;
   }
   .max-w-2xl {
     max-width: var(--container-2xl);
@@ -414,6 +420,9 @@
   .to-\[\#0b0f15\] {
     --tw-gradient-to: #0b0f15;
     --tw-gradient-stops: var(--tw-gradient-via-stops, var(--tw-gradient-position), var(--tw-gradient-from) var(--tw-gradient-from-position), var(--tw-gradient-to) var(--tw-gradient-to-position));
+  }
+  .object-cover {
+    object-fit: cover;
   }
   .p-7 {
     padding: calc(var(--spacing) * 7);
